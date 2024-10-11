@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Booking</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 1em 0;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 1em;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #002244;
+            border-radius: 4px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Online Booking System</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recipes">Best Sample Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section id="home" class="booking-form">
+            <h2 class="mb-4">Welcome to Our Online Booking System</h2>
+            <p>Welcome to our convenient and user-friendly online booking system. Whether you're looking to schedule an appointment, book a service, or reserve a spot, we've got you covered.</p>
+            <p>To get started, simply fill out the booking form below with your details, preferred date, and time. Our team will confirm your booking and send you a confirmation email.</p>
+            <h3 class="mb-3">Get Started Now</h3>
+            <h2 class="mb-3">Book Your Appointment</h2>
+
+            <form id="bookingForm" class="bg-light p-4 rounded">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="school">School:</label>
+                    <select class="form-control" id="school" name="school">
+                        <option>a</option>
+                        <option>b</option>
+                        <option>c</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Book Now</button>
+            </form>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are committed to providing the best service experience for our clients. Established in 2024, our goal has always been to make scheduling appointments and booking services as easy and efficient as possible.</p>
+            <p>Our team is comprised of dedicated professionals who are passionate about delivering exceptional service. We take pride in our attention to detail and our ability to meet the unique needs of each client.</p>
+            <p>We believe in transparency, reliability, and customer satisfaction. Our online booking system is designed with these values in mind, ensuring that every interaction is smooth and stress-free.</p>
+            <p>Learn more about our services and how we can assist you by exploring the rest of our site or reaching out to us directly.</p>
+        </section>        
+
+        <section id="recipes">
+            <h2>Best Sample Recipes</h2>
+            <p>Explore our collection of the best sample recipes that showcase our culinary expertise. Whether you're looking for quick meals, gourmet dishes, or family favorites, you'll find something to inspire your next meal.</p>
+            
+            <article>
+                <h3>Recipe 1: Classic Spaghetti Carbonara</h3>
+                <p>This classic Italian pasta dish is creamy, savory, and easy to make. Perfect for a quick weeknight dinner or a special occasion.</p>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>200g spaghetti</li>
+                    <li>100g pancetta</li>
+                    <li>2 large eggs</li>
+                    <li>50g Parmesan cheese</li>
+                    <li>Salt and black pepper to taste</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Cook spaghetti according to package instructions.</li>
+                    <li>Fry pancetta in a pan until crispy.</li>
+                    <li>In a bowl, whisk together eggs and Parmesan cheese.</li>
+                    <li>Combine cooked spaghetti with pancetta, then mix in the egg mixture.</li>
+                    <li>Season with salt and black pepper, and serve immediately.</li>
+                </ol>
+            </article>
+        
+            <article>
+                <h3>Recipe 2: Chicken Tikka Masala</h3>
+                <p>A flavorful and creamy chicken dish that is a staple in Indian cuisine. This recipe combines marinated chicken with a rich tomato-based sauce.</p>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500g chicken breast</li>
+                    <li>200g yogurt</li>
+                    <li>2 tablespoons tikka masala paste</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>400g tomato sauce</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Marinate chicken in yogurt and tikka masala paste for at least 1 hour.</li>
+                    <li>Cook onions in a pan until golden, then add marinated chicken and cook through.</li>
+                    <li>Stir in tomato sauce and simmer until the sauce thickens.</li>
+                    <li>Garnish with fresh cilantro and serve with rice or naan bread.</li>
+                </ol>
+            </article>
+        
+            <p>For more recipes and cooking tips, visit our <a href="#contact">Contact Us</a> page to get in touch with our culinary experts.</p>
+        </section>
+        
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, please reach out to us:</p>
+
+            <form id="contactForm" class="bg-light p-4 rounded">
+                <div class="form-group">
+                    <label for="contactName">Full Name:</label>
+                    <input type="text" class="form-control" id="contactName" name="contactName" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="contactEmail">Email:</label>
+                    <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="contactMessage">Message:</label>
+                    <textarea class="form-control" id="contactMessage" name="contactMessage" rows="4" required></textarea>
+                </div>
+            
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>            
+        </section>
+    
+
+        <!-- Other sections (about, recipes, contact) remain unchanged -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Booking System. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for Booking Form -->
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form from submitting
+            alert('Your booking has been submitted successfully!');
+            // You can add logic to handle the form submission here (e.g., send the form data to a server).
+        });
+    </script>
+</body>
+</html>
